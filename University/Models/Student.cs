@@ -1,11 +1,7 @@
-﻿namespace University.Models
+﻿public class Student
 {
-    public class Student
-    {
-        public int StudentId { get; set; }
-        public string Name { get; set; }
-        public int SubjectId { get; set; }
-        public Subject Subject { get; set; }
-
-    }
+    public int StudentId { get; set; }
+    public string Name { get; set; }
+    public DateTime EnrollmentDate { get; set; }
+    public ICollection<Enrollment> Enrollments { get; set; }
 }
